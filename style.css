@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+}
+
+/*CONTAINER*/
+.left{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+}
+
+/*MAIN-HEADER*/
+.heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    background-color: orangered;
+}
+
+/*LOGIN*/
+form{
+    padding: 20px;
+}
+
+.user-input{
+    border: 1px solid black;
+    width: 80%;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.password-input{
+    border: 1px solid black;
+    width: 80%;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*LOGIN-BTN*/
+.login-btn{
+    justify-content: center;
+    width: 40%;
+    padding: 15px;
+    border: orangered;
+    background: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+.login-btn:hover{
+    color: black;
+    transition: 1000ms;
+}
+
+/*LINKS*/
+.links {
+    padding: 15px;
+}
+
+.links a{
+    font-weight: bold;
+    padding: 20px;
+    justify-content: space-between;
+    color: white;
+}
+
+.links a:hover{
+    color: orangered;
+    transition: 1000ms;
+}
+
+/*SOCIALS*/
+#socials{
+    padding: 20px;
+}
+
+#socials #link-btn1{
+    display: inline-flex;
+    align-items: center;
+    border: 8px solid purple;
+    border-radius: 8px;
+    background: purple;
+    width: 100%;
+    margin-bottom: 2px;
+}
+ #socials #link-btn1 a{
+     margin-left: 30%;
+     text-decoration:none;
+     color: black;
+ }
+
+ #socials #link-btn2{
+    display: inline-flex;
+    align-items: center;
+    border: 8px solid lightblue;
+    border-radius: 8px;
+    background: lightblue;
+    width: 100%;
+    margin-bottom: 2px;
+}
+ #socials #link-btn2 a{
+     margin-left: 30%;
+     text-decoration:none;
+     color: black;
+ }
+
+ #socials #link-btn3{
+    display: inline-flex;
+    align-items: center;
+    border: 8px solid white;
+    border-radius: 8px;
+    background: white;
+    width: 100%;
+}
+ #socials #link-btn3 a{
+     margin-left: 30%;
+     text-decoration:none;
+     color: black;
+ }
+
+ #socials #link-btn1 a:hover{
+    color: orangered;
+    transition: 1000ms;
+ }
+
+ #socials #link-btn2 a:hover{
+    color: orangered;
+    transition: 1000ms;
+ }
+
+ #socials #link-btn3 a:hover{
+    color: orangered;
+    transition: 1000ms;
+ }
+
+ footer{
+     margin-top: 30px;
+     color: white;
+     text-align: center;
+ }
+
+ footer span{
+     color: orangered;
+ }
+
+ /*SHOWCASE*/
+.showcase{
+    background: url(./img/login.jpeg) no-repeat center center / cover;
+    width: 50%;
+    float: right;
+}
+
+@media(max-width:425px){
+    .left{
+        flex: 1;
+    }
+
+    .showcase{
+        display: none;
+    }
+}
+
+@media (max-width:320px){
+    .links {
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .links a{
+        padding: 12px;
+        justify-content: space-evenly;
+    }
+
+    #socials{
+        padding: 10px;
+    }
+}
